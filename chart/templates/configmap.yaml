@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: catalog-service-config
 data:
-  PRODUCTS_SERVICE_URL: 'http://products-service.demo.svc.cluster.local:3000'
+  PRODUCTS_SERVICE_URL: {{ .Values.productservice.url }}

@@ -1,6 +1,7 @@
-
 catalogservice:
   deployment:
     image: docker.io/bricerisingslalom/catalog-service
     tag: latest
 
+productservice:
+  url: http://products-service.demo.svc.cluster.local:3000
