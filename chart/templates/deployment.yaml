@@ -8,11 +8,11 @@ spec:
     metadata:
       labels:
         app: catalog-service
-        version: "1.0"
+        version: {{ .Values.catalogservice.deployment.tag }}
     spec:
       containers:
         - name: catalog-service
-          image: {{ .Values.catalogservice.deployment.image }}
+          image: {{ .Values.catalogservice.deployment.image }}:{{ .Values.catalogservice.deployment.tag }}
           imagePullPolicy: Always
           resources:
             limits:

@@ -1,5 +1,6 @@
 
 catalogservice:
   deployment:
-    image: docker.io/bricerisingslalom/catalog-service:latest
+    image: docker.io/bricerisingslalom/catalog-service
+    tag: latest
 
