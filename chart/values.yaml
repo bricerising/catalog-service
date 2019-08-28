@@ -1,0 +1,5 @@
+
+catalogservice:
+  deployment:
+    image: docker.io/bricerisingslalom/catalog-service:latest
+

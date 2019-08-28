@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: catalog-service
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: catalog-service
+        version: "1.0"
+    spec:
+      containers:
+        - name: catalog-service
+          image: {{ .Values.catalogservice.deployment.image }}
+          imagePullPolicy: Always
+          resources:
+            limits:
+              memory: 128M
+              cpu: .1
+          ports:
+            - containerPort: 3001
+          envFrom:
+            - configMapRef:
+                name: catalog-service-config

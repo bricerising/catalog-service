@@ -1,0 +1,17 @@
+{
+  "name": "catalog-service",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"no tests\"",
+    "start": "node src/catalog.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "requestify": "^0.2.5"
+  }
+}
