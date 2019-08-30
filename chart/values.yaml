@@ -4,4 +4,4 @@ catalogservice:
     tag: latest
 
 productservice:
-  url: http://products-service.product-service-origin-master.svc.cluster.local:3000
+  url: http://product-service.product-service-origin-master.svc.cluster.local:3000
